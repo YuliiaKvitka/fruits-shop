@@ -1,0 +1,59 @@
+/* .h1_wrapper {
+  width: clamp(20.9375rem, 44rem, 56.125px);
+} */
+.img::before {
+  position: absolute;
+  background: url(./../../../public/assets/fruits/image-1.png);
+  width: 64px;
+  height: 44px;
+  filter: blur(4px);
+  top: 136px;
+  left: 30px;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .img::before {
+    width: 132px;
+    height: 90px;
+    top: 154px;
+    left: 112px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .img::before {
+    width: 183px;
+    height: 124px;
+    top: 228px;
+    left: 230px;
+  }
+}
+.img::after {
+  position: absolute;
+  background: url(./../../../public/assets/fruits/image-2.png);
+  width: 56px;
+  height: 56px;
+  filter: blur(4px);
+  top: 74px;
+  right: 92px;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .img::after {
+    width: 108px;
+    height: 108px;
+    top: 74px;
+    right: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .img::after {
+    width: 120px;
+    height: 120px;
+    top: 74px;
+    right: 176px;
+  }
+}
